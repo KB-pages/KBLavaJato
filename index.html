@@ -5,30 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KB Lava Jato — Site Oficial & Agendamento</title>
 
+<!-- Font Awesome para ícones -->
+<script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
+
 <!-- CSS -->
 <style>
-/* RESET E BASE */
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
 body{background:#0f1724;color:#e6eef8;line-height:1.5;}
 a{text-decoration:none;color:inherit;}
-.container{max-width:1200px;margin:0 auto;padding:20px;}
-h1,h2,h3{color:#fff;}
-p{color:#d1d5db;}
-button{cursor:pointer;border:none;border-radius:8px;padding:10px 15px;font-weight:600;transition:0.3s;}
-button:hover{opacity:0.85;}
 header{display:flex;justify-content:space-between;align-items:center;padding:20px;background:#071021;}
 header nav a{margin-left:15px;color:#fff;font-weight:500;}
 header nav a:hover{text-decoration:underline;}
 section{padding:40px 20px;}
+h1,h2,h3{color:#fff;}
+p{color:#d1d5db;}
 .hero img{width:100%;border-radius:12px;}
 .cards{display:flex;flex-wrap:wrap;gap:20px;margin-top:20px;}
 .card{flex:1 1 400px;background:rgba(255,255,255,0.05);padding:20px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.5);}
 input,select,textarea{width:100%;padding:10px;margin-top:5px;margin-bottom:15px;border-radius:8px;background:#0b1220;color:#e6eef8;border:1px solid #444;}
+button{cursor:pointer;border:none;border-radius:8px;padding:10px 15px;font-weight:600;transition:0.3s;background:#ff7a00;color:#081023;}
+button:hover{opacity:0.85;}
 .list{max-height:300px;overflow-y:auto;}
 .item{display:flex;justify-content:space-between;padding:10px;background:rgba(255,255,255,0.02);border-radius:8px;margin-bottom:8px;}
-footer{background:#071021;color:#94a3b8;text-align:center;padding:20px;}
 .fotos{display:flex;flex-wrap:wrap;gap:10px;}
 .fotos img{width:calc(50% - 10px);border-radius:8px;}
+footer{background:#071021;color:#94a3b8;text-align:center;padding:20px;}
+footer a{color:#25D366;}
 @media(max-width:900px){.cards{flex-direction:column;}.fotos img{width:100%;}}
 </style>
 
@@ -55,9 +58,11 @@ window.db = db;
 <script>
 emailjs.init("go_0mb59RZJWklf3S");
 </script>
-</head>
 
+</head>
 <body>
+
+<!-- Header -->
 <header>
 <div class="logo" style="color:#ff7a00;font-weight:bold;font-size:24px;">KB</div>
 <nav>
@@ -68,31 +73,33 @@ emailjs.init("go_0mb59RZJWklf3S");
 <a href="#avaliacoes">Avaliações</a>
 <a href="#contato">Contato</a>
 <a href="#agendamento">Agendamento</a>
-<a href="https://wa.me/5583994147741" target="_blank" style="color:#25D366;">WhatsApp</a>
+<a href="https://wa.me/5583994147741" target="_blank">WhatsApp</a>
 </nav>
 </header>
 
+<!-- Hero -->
 <section class="hero">
 <img src="2.png" alt="Banner KB Lava Jato">
 </section>
 
+<!-- Introdução -->
 <section id="intro">
 <h1>Bem-vindo ao KB Lava Jato</h1>
 <p>Especialistas em lavagem automotiva de qualidade: simples, completa, detalhada e polimento profissional.</p>
 </section>
 
+<!-- Sobre -->
 <section id="sobre">
 <h2>Sobre o KB Lava Jato</h2>
 <p>O <strong>KB Lava Jato</strong> oferece atendimento diferenciado e serviços de qualidade para quem valoriza o cuidado com seu veículo.</p>
 </section>
 
+<!-- Serviços -->
 <section id="servicos">
 <h2>Nossos Serviços</h2>
 <table style="width:100%;border-collapse:collapse;color:#e6eef8;">
 <thead>
-<tr>
-<th>Serviço</th><th>Descrição</th><th>Preço</th>
-</tr>
+<tr><th>Serviço</th><th>Descrição</th><th>Preço</th></tr>
 </thead>
 <tbody>
 <tr><td>Lavagem Simples</td><td>Remoção básica de sujeiras externas com jato d'água e shampoo neutro.</td><td>R$20,00</td></tr>
@@ -103,6 +110,7 @@ emailjs.init("go_0mb59RZJWklf3S");
 </table>
 </section>
 
+<!-- Galeria -->
 <section id="galeria">
 <h2>Galeria de Fotos</h2>
 <div class="fotos">
@@ -113,12 +121,14 @@ emailjs.init("go_0mb59RZJWklf3S");
 </div>
 </section>
 
+<!-- Avaliações -->
 <section id="avaliacoes">
 <h2>Deixe sua Avaliação</h2>
-<p>Gostou do nosso serviço? Clique no botão abaixo para avaliar:</p>
+<p>Gostou do nosso serviço? Clique abaixo:</p>
 <div><a href="https://docs.google.com/forms/d/e/1FAIpQLSfRjXz0QMM3ky2I3QoP5Y0Z0Te2xnO6kTrn_slBahCucvTYkw/viewform?usp=header" target="_blank" style="color:#ff7a00;">Avaliar</a></div>
 </section>
 
+<!-- Contato -->
 <section id="contato">
 <h2>Fale Conosco</h2>
 <form id="formulario">
@@ -128,6 +138,7 @@ emailjs.init("go_0mb59RZJWklf3S");
 </form>
 </section>
 
+<!-- Agendamento -->
 <section id="agendamento">
 <h2>Agende seu Serviço</h2>
 <div class="cards">
@@ -172,8 +183,9 @@ emailjs.init("go_0mb59RZJWklf3S");
 </div>
 </section>
 
+<!-- Footer -->
 <footer>
-<p>&copy; 2025 KB Lava Jato | <a href="https://wa.me/5583994147741" style="color:#25D366;">WhatsApp</a></p>
+<p>&copy; 2025 KB Lava Jato | <a href="https://wa.me/5583994147741">WhatsApp</a></p>
 </footer>
 
 <!-- Script Agendamento -->
@@ -215,13 +227,10 @@ form.addEventListener("submit", async function(e){
     hora: document.getElementById("agendamento-hora").value
   };
   try{
-    // Verifica duplicidade
     const q = query(collection(db,"agendamentos"), where("data","==",dados.data), where("hora","==",dados.hora));
     const resultado = await getDocs(q);
     if(!resultado.empty){ alert("❌ Este horário já está agendado."); botao.disabled=false; botao.textContent="Agendar"; return; }
-    // Envia EmailJS
     await emailjs.send("service_r18876j","template_d9x4uep",dados);
-    // Salva no Firebase
     await addDoc(collection(db,"agendamentos"),{...dados,timestamp:new Date()});
     alert("✅ Agendamento realizado com sucesso! Confira seu e-mail 📩");
     form.reset();
